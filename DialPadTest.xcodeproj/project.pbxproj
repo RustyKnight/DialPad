@@ -16,6 +16,7 @@
 		7041B35F1D151A51004EE93D /* DialPadTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B35E1D151A51004EE93D /* DialPadTestUITests.swift */; };
 		7041B36D1D151A90004EE93D /* PadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B36C1D151A90004EE93D /* PadButton.swift */; };
 		7041B36F1D1527D3004EE93D /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B36E1D1527D3004EE93D /* ManualViewController.swift */; };
+		70E64B351D166BAF000E60A1 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E64B341D166BAF000E60A1 /* NumberPad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7041B3601D151A51004EE93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7041B36C1D151A90004EE93D /* PadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadButton.swift; sourceTree = "<group>"; };
 		7041B36E1D1527D3004EE93D /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		70E64B341D166BAF000E60A1 /* NumberPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7041B34A1D151A51004EE93D /* Info.plist */,
 				7041B36C1D151A90004EE93D /* PadButton.swift */,
 				7041B36E1D1527D3004EE93D /* ManualViewController.swift */,
+				70E64B341D166BAF000E60A1 /* NumberPad.swift */,
 			);
 			path = DialPadTest;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				7041B36D1D151A90004EE93D /* PadButton.swift in Sources */,
 				7041B3411D151A51004EE93D /* ViewController.swift in Sources */,
+				70E64B351D166BAF000E60A1 /* NumberPad.swift in Sources */,
 				7041B36F1D1527D3004EE93D /* ManualViewController.swift in Sources */,
 				7041B33F1D151A51004EE93D /* AppDelegate.swift in Sources */,
 			);
@@ -492,6 +496,7 @@
 				7041B3651D151A51004EE93D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7041B3661D151A51004EE93D /* Build configuration list for PBXNativeTarget "DialPadTestTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				7041B3681D151A51004EE93D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7041B3691D151A51004EE93D /* Build configuration list for PBXNativeTarget "DialPadTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				7041B36B1D151A51004EE93D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
