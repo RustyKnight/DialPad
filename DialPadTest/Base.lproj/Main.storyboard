@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DialPadTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-7r-Iq5" customClass="PadButton" customModule="DialPadTest" customModuleProvider="target">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="padText" value="9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="subText" value="abc"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ta0-7r-Iq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Od2-WI-VUC"/>
+                            <constraint firstItem="Ta0-7r-Iq5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fPk-k3-nHX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zaK-W1-gQe">
+            <objects>
+                <viewController id="fOJ-2R-JFW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QIg-tR-wRf"/>
+                        <viewControllerLayoutGuide type="bottom" id="12Z-aK-8Zy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ly-tH-wuU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-JK-f3X">
+                                <rect key="frame" x="279" y="290" width="62" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-Wb-o8F">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Little Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogc-ZM-lsh">
+                                        <rect key="frame" x="0.0" y="25" width="62" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kAg-JK-f3X" firstAttribute="centerX" secondItem="9ly-tH-wuU" secondAttribute="centerX" id="yXA-8m-gBy"/>
+                            <constraint firstItem="kAg-JK-f3X" firstAttribute="centerY" secondItem="9ly-tH-wuU" secondAttribute="centerY" id="ycx-eY-yfh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKd-oW-aEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="702"/>
+        </scene>
+    </scenes>
+</document>
