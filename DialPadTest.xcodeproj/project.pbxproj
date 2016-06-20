@@ -16,7 +16,8 @@
 		7041B35F1D151A51004EE93D /* DialPadTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B35E1D151A51004EE93D /* DialPadTestUITests.swift */; };
 		7041B36D1D151A90004EE93D /* PadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B36C1D151A90004EE93D /* PadButton.swift */; };
 		7041B36F1D1527D3004EE93D /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041B36E1D1527D3004EE93D /* ManualViewController.swift */; };
-		70E64B351D166BAF000E60A1 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E64B341D166BAF000E60A1 /* NumberPad.swift */; };
+		70E64B371D17F1F8000E60A1 /* NumberPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E64B361D17F1F8000E60A1 /* NumberPadButton.swift */; };
+		70E64B391D17F506000E60A1 /* ImagePadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E64B381D17F506000E60A1 /* ImagePadButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		7041B3601D151A51004EE93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7041B36C1D151A90004EE93D /* PadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadButton.swift; sourceTree = "<group>"; };
 		7041B36E1D1527D3004EE93D /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
-		70E64B341D166BAF000E60A1 /* NumberPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		70E64B361D17F1F8000E60A1 /* NumberPadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPadButton.swift; sourceTree = "<group>"; };
+		70E64B381D17F506000E60A1 /* ImagePadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePadButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,8 @@
 				7041B34A1D151A51004EE93D /* Info.plist */,
 				7041B36C1D151A90004EE93D /* PadButton.swift */,
 				7041B36E1D1527D3004EE93D /* ManualViewController.swift */,
-				70E64B341D166BAF000E60A1 /* NumberPad.swift */,
+				70E64B361D17F1F8000E60A1 /* NumberPadButton.swift */,
+				70E64B381D17F506000E60A1 /* ImagePadButton.swift */,
 			);
 			path = DialPadTest;
 			sourceTree = "<group>";
@@ -266,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7041B36D1D151A90004EE93D /* PadButton.swift in Sources */,
+				70E64B391D17F506000E60A1 /* ImagePadButton.swift in Sources */,
 				7041B3411D151A51004EE93D /* ViewController.swift in Sources */,
-				70E64B351D166BAF000E60A1 /* NumberPad.swift in Sources */,
+				70E64B371D17F1F8000E60A1 /* NumberPadButton.swift in Sources */,
 				7041B36F1D1527D3004EE93D /* ManualViewController.swift in Sources */,
 				7041B33F1D151A51004EE93D /* AppDelegate.swift in Sources */,
 			);

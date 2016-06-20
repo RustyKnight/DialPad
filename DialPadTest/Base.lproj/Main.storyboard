@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-7r-Iq5" customClass="PadButton" customModule="DialPadTest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-7r-Iq5" customClass="NumberPadButton" customModule="DialPadTest" customModuleProvider="target">
                                 <rect key="frame" x="278" y="278" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -26,6 +26,31 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dimeter">
+                                        <real key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2G-OT-If3" customClass="ImagePadButton" customModule="DialPadTest" customModuleProvider="target">
+                                <rect key="frame" x="278" y="330" width="44" height="44"/>
+                                <color key="tintColor" red="0.62745098040000002" green="0.83921568629999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Ku-R1-jAE"/>
+                                    <constraint firstAttribute="width" constant="44" id="hPe-hC-s42"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.62745098040000002" green="0.83921568629999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dimeter">
+                                        <real key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="phone_up_white"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -33,6 +58,8 @@
                         <constraints>
                             <constraint firstItem="Ta0-7r-Iq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Od2-WI-VUC"/>
                             <constraint firstItem="Ta0-7r-Iq5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fPk-k3-nHX"/>
+                            <constraint firstItem="L2G-OT-If3" firstAttribute="top" secondItem="Ta0-7r-Iq5" secondAttribute="bottom" constant="8" id="hwQ-V8-6jx"/>
+                            <constraint firstItem="L2G-OT-If3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUX-sA-Tgd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -81,4 +108,7 @@
             <point key="canvasLocation" x="844" y="427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="phone_up_white" width="44" height="44"/>
+    </resources>
 </document>
