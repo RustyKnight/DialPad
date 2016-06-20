@@ -68,7 +68,7 @@ import UIKit
 		layer.cornerRadius = min(bounds.width, bounds.height) / 2.0
 	}
 	
-	internal var touchDuration: NSTimeInterval = 5
+	internal var touchDuration: NSTimeInterval = 1.0
 
 	public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
 		super.beginTrackingWithTouch(touch, withEvent: event)

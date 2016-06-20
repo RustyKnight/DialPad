@@ -65,13 +65,24 @@ import UIKit
 	
 	override public func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
 		if let image = image {
-			imageView.animationImages = [
-				image.imageWithRenderingMode(.Automatic),
-//				UIImage(named: "phone_up")!,
-				image]
-			imageView.animationDuration = touchDuration
-			imageView.animationRepeatCount = 1
-			imageView.startAnimating()
+//			imageView.animationImages = [
+//				image.imageWithRenderingMode(.AlwaysTemplate),
+//				image]
+//			imageView.animationDuration = touchDuration
+//			imageView.animationRepeatCount = 1
+//			imageView.startAnimating()
+			dispatch_async(dispatch_get_main_queue(), {
+				UIView.transitionWithView(
+					self.imageView,
+					duration: self.touchDuration,
+					options: UIViewAnimationOptions.TransitionCrossDissolve,
+					animations: {
+						self.imageView.image = image
+					},
+					completion: nil)
+			})
+			imageView.tintColor = borderColor
+			imageView.image = image.imageWithRenderingMode(.AlwaysTemplate)
 		}
 		
 		return super.beginTrackingWithTouch(touch, withEvent: event)
