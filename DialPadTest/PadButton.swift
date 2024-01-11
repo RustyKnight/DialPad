@@ -9,32 +9,26 @@
 import UIKit
 
 @IBDesignable public class PadButton: UIControl {
-	
 	@IBInspectable public var dimeter: Double = 44.0
 	
-	@IBInspectable public var borderColor: UIColor = UIColor.blackColor() {
+    @IBInspectable public var borderColor: UIColor = .black {
 		didSet {
-			layer.borderColor = borderColor.CGColor
+            layer.borderColor = borderColor.cgColor
 			if filled {
-				layer.backgroundColor = borderColor.CGColor
+                layer.backgroundColor = borderColor.cgColor
 			}
 		}
 	}
 	
 	@IBInspectable public var borderWidth: CGFloat {
-		set {
-			layer.borderWidth = newValue
-		}
-		
-		get {
-			return layer.borderWidth
-		}
+		set { layer.borderWidth = newValue }
+		get { layer.borderWidth }
 	}
 	
 	@IBInspectable public var filled: Bool = false {
 		didSet {
 			if filled {
-				layer.backgroundColor = borderColor.CGColor
+                layer.backgroundColor = borderColor.cgColor
 			} else {
 				layer.backgroundColor = nil
 			}
@@ -54,31 +48,31 @@ import UIKit
 	func setup() {
 		dimeter = 44
 		borderWidth = 1
-		borderColor = UIColor.blackColor()
-		opaque = false
+        borderColor = .black
+        isOpaque = false
 		clipsToBounds = true
 	}
-	
-	public override func intrinsicContentSize() -> CGSize {
-		return CGSize(width: dimeter, height: dimeter)
-	}
+    
+    public override var intrinsicContentSize: CGSize {
+        return CGSize(width: dimeter, height: dimeter)
+    }
 	
 	public override func layoutSubviews() {
 		super.layoutSubviews()
 		layer.cornerRadius = min(bounds.width, bounds.height) / 2.0
 	}
 	
-	internal var touchDuration: NSTimeInterval = 1.0
+    internal var touchDuration: TimeInterval = 1.0
 
-	public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
-		super.beginTrackingWithTouch(touch, withEvent: event)
+    public override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        super.beginTracking(touch, with: event)
 		let duration = touchDuration
 		
-		var fromColor = borderColor.CGColor
-		var toColor = UIColor.clearColor().CGColor
+        var fromColor = borderColor.cgColor
+        var toColor = UIColor.clear.cgColor
 		if filled {
-			fromColor = UIColor.clearColor().CGColor
-			toColor = borderColor.CGColor
+            fromColor = UIColor.clear.cgColor
+            toColor = borderColor.cgColor
 		}
 		
 		layer.backgroundColor = fromColor
@@ -87,17 +81,17 @@ import UIKit
 		animation.duration = duration
 		animation.fromValue = fromColor
 		animation.toValue = toColor
-		layer.addAnimation(animation, forKey: "backgroundColor")
+        layer.add(animation, forKey: "backgroundColor")
 		
 		layer.backgroundColor = toColor
 		
-		self.sendActionsForControlEvents(UIControlEvents.ValueChanged)
+        self.sendActions(for: .valueChanged)
 		
 		return true
 	}
 	
-	public override func continueTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
-		super.continueTrackingWithTouch(touch, withEvent: event)
+    public override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        super.continueTracking(touch, with: event)
 		return false
 	}
 	
